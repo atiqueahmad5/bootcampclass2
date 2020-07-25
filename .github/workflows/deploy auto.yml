@@ -31,11 +31,11 @@ jobs:
     cmd: install # npm install/ yarn install
     
   -name: creating build
-   run: yarn build
+    run: yarn build
     
   -name: installing surge
-   run: npm install -g surge
+    run: npm install -g surge
    
      
   -name: deploying on surge
-   run: surge ./build http://atiqueahmadapp.surge.sh/ --token ${{secrets-SURGE-TOKEN}}
+    run: surge ./build http://atiqueahmadapp.surge.sh/ --token ${{secrets-SURGE-TOKEN}}
